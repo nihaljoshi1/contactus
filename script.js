@@ -2,7 +2,7 @@
 const EMAILJS_CONFIG = {
   serviceID: 'service_fluvsuq',      // From EmailJS dashboard
   templateID: 'template_44gylil',   // From EmailJS templates
-  userID: 'kkURqBbNelsFVSfbv'      // From EmailJS account
+  userID: 'NoteFlare'      // From EmailJS account
 };
 // ============== END CONFIG ==============
 
