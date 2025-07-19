@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | NoteFlare</title>
+  <link rel="shortcut icon" type="image/jpg" href="images/news2.png"/>
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Animate.css for animations -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="background-animation">
+    <div class="shape"></div>
+    <div class="shape"></div>
+  </div>
+
+  <section class="contact-section">
+    <div class="container">
+      <div class="contact-card">
+        <div class="contact-info">
+          <div class="info-header">
+            <h2 class="animate__animated animate__fadeInDown">Get In Touch</h2>
+            <p class="animate__animated animate__fadeInDown animate__delay-1s">We'd love to hear from you! Reach out through any of these channels.</p>
+          </div>
+          
+          <div class="contact-details animate__animated animate__fadeInLeft">
+            <div class="detail-item">
+              <div class="icon-circle">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="detail-content">
+                <h3>Email Us</h3>
+                <a href="mailto:edu.noteflare@gmail.com">edu.noteflare@gmail.com</a>
+              </div>
+            </div>
+            
+            <div class="detail-item">
+              <div class="icon-circle">
+                <i class="fas fa-phone-alt"></i>
+              </div>
+              <div class="detail-content">
+                <h3>Call Us</h3>
+                <p>+1 (555) 123-4567</p>
+              </div>
+            </div>
+            
+            <div class="detail-item">
+              <div class="icon-circle">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="detail-content">
+                <h3>Visit Us</h3>
+                <p>123 Education Street, Boston, MA 02115</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="social-links animate__animated animate__fadeInUp animate__delay-1s">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+              <a href="https://www.facebook.com/NoteFlare/" class="social-icon facebook" target="_blank">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="https://x.com/NoteFlare/" class="social-icon twitter" target="_blank">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="https://www.instagram.com/NoteFlare/" class="social-icon instagram" target="_blank">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="https://www.linkedin.com/company/NoteFlare/" class="social-icon linkedin" target="_blank">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              <a href="https://www.youtube.com/NoteFlare/" class="social-icon youtube" target="_blank">
+                <i class="fab fa-youtube"></i>
+              </a>
+              <a href="https://github.com/NoteFlare/" class="social-icon github" target="_blank">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="contact-form animate__animated animate__fadeInRight">
+          <div class="form-header">
+            <h2>Send Us a Message</h2>
+            <p>Fill out the form below and we'll get back to you as soon as possible.</p>
+          </div>
+          
+          <form id="contactForm" action="https://formsubmit.co/edu.noteflare@gmail.com" method="POST">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_next" value="?success=true">
+            
+            <div class="form-group dual-inputs">
+              <div class="input-field">
+                <input type="text" name="First Name" id="firstName" required>
+                <label for="firstName">First Name</label>
+                <span class="underline"></span>
+              </div>
+              <div class="input-field">
+                <input type="text" name="Last Name" id="lastName" required>
+                <label for="lastName">Last Name</label>
+                <span class="underline"></span>
+              </div>
+            </div>
+            
+            <div class="form-group dual-inputs">
+              <div class="input-field">
+                <input type="email" name="Email" id="email" required>
+                <label for="email">Email Address</label>
+                <span class="underline"></span>
+              </div>
+              <div class="input-field">
+                <input type="tel" name="Mobile Number" id="phone" required>
+                <label for="phone">Mobile Number</label>
+                <span class="underline"></span>
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <div class="input-field textarea-field">
+                <textarea name="Message" id="message" required></textarea>
+                <label for="message">Your Message</label>
+                <span class="underline"></span>
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <button type="submit" class="submit-btn">
+                <span>Send Message</span>
+                <i class="fas fa-paper-plane"></i>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="success-modal" id="successModal">
+    <div class="modal-content animate__animated animate__zoomIn">
+      <div class="checkmark-circle">
+        <div class="checkmark"></div>
+      </div>
+      <h2>Thank You!</h2>
+      <p>Your message has been sent successfully. We'll get back to you soon.</p>
+      <button class="close-modal" onclick="closeModal()">Close</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
